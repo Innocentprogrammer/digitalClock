@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgba(33, 33, 156, 0.634);
+        }
         #inner{
             padding: 10px;
-            margin-left: 30%;
-            margin-top: 20%;
+            margin: auto;
             font-size: 70px;
             border: solid 3px black;
             width: 440px;
+            background-color: beige;
+            border-radius: 100px;
         }
     </style>
 </head>
 
 <body>
-    <p id="inner">08:10:45</p>
+    <marquee scrollamount="20" direction="down" behaviour="scroll" height="800px">
+        <p id="inner">08:10:45</p>
+    </marquee>
+    
 
     <script>
         setInterval(showTime, 1000);
